@@ -1,0 +1,32 @@
+#+TITLE: dos2unix.el
+#+SUBTITLE: dos2unix ... in Emacs
+#+AUTHOR: Case Duckworth (acdw) (duckwork)
+
+The dos2unix command-line program is amazing, but it doesn't run in Emacs
+directly, which means that on, say, Windows, it's a real pain to get setup
+right.  This package emulates that functionality within Emacs so that you can
+use it wherever you can use Emacs.
+
+* Commands
+
+- ~dos2unix-region~ :: Replace =\r\n= with =\n= in a region.
+- ~dos2unix-buffer~ :: Replace =\r\n= with =\n= in a buffer.
+- ~dos2unix-dwim~ :: Replace =\r\n= with =\n= in the active region or current buffer,
+  whichever makes more sense.  This is the one you probably want to use most of
+  the time.
+
+* License
+
+Everyone is permitted to do whatever with this software, without limitation.
+This software comes without any warranty whatsoever, but with two pieces of
+advice:
+
+- Be kind to yourself.
+- Make good choices.
+
+* Still to do
+
+It might be a good idea to include unix2dos commands as well, but I never want
+to do that personally.
+
+Of course, contributions and issue requests are welcome!
